@@ -50,7 +50,7 @@ npm test
 npm run build
 ```
 
-O comando `build` verifica a sintaxe e as referências locais. O projeto não precisa de compilação. Para publicar em uma hospedagem estática, utilize o conteúdo de `dist`. No Vercel, selecione **Other**, Build Command `npm run build` e Output Directory `dist`; não selecione Next.js. O jogo não usa Supabase nem exige `.env`.
+O comando `build` verifica a sintaxe e as referências locais. O projeto não precisa de compilação. Para publicar em uma hospedagem estática, utilize o conteúdo de `dist`. No Vercel, o `vercel.json` já configura o projeto estático, Build Command `npm run build` e Output Directory `dist`. A Root Directory deve apontar para a pasta que contém `package.json` e `vercel.json`. Se configurar pelo painel, selecione **Other** e Output Directory `dist`. O erro de diretório `public` ausente indica que o deploy está procurando a pasta errada. Inclua o `vercel.json` no repositório e faça um novo deploy com a alteração. O jogo não usa Supabase nem exige `.env`.
 
 ## Organização
 
