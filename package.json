@@ -1,0 +1,14 @@
+{
+  "name": "nova-aurora-geometria",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Um jogo de geometria plana e espacial em uma cidade inteligente 3D.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
