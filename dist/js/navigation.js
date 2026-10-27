@@ -1,4 +1,4 @@
-const routes = {inicio:'home',missao:'intro',tutorial:'tutorial',cidade:'map',conquista:'final'};
+const routes = {inicio:'home',missao:'intro',tutorial:'tutorial',cidade:'map',conquista:'final',professor:'teacher'};
 export function readRoute(hash) {
  const key=String(hash||'').replace(/^#/,''),match=key.match(/^fase-([1-5])$/);
  return match?{screen:'mission',phase:Number(match[1])-1}:{screen:routes[key]||'home'};

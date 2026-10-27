@@ -14,4 +14,4 @@ export async function handler(req,res){
   const data=await readFile(file);res.writeHead(200,{'Content-Type':types[extname(file)]||'application/octet-stream','Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'});res.end(req.method==='HEAD'?undefined:data);
  }catch{res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'});res.end('Arquivo não encontrado.');}
 }
-if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))createServer(handler).listen(port,host,()=>console.log(`Nova Aurora disponível em http://localhost:${port}`));
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))createServer(handler).listen(port,host,()=>console.log(`Math City disponível em http://localhost:${port}`));

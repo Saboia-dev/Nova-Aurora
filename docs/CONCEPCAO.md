@@ -1,4 +1,4 @@
-# Nova Aurora — Operação Cidade Inteligente
+# Math City — Operação Cidade Inteligente
 
 ## Intenção e resultado
 Transformar os problemas urbanos do protótipo em um jogo educacional completo. O estudante apresenta-se como urbanista, conhece a narrativa, aprende os controles e visita cinco distritos em sequência. Cada distrito contém um minijogo diferente que exige construção e cálculo. A geometria plana sustenta áreas e ocupação; a espacial, volumes e estruturas.

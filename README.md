@@ -1,4 +1,4 @@
-# Nova Aurora — Operação Cidade Inteligente
+# Math City — Operação Cidade Inteligente
 
 Jogo educacional completo de geometria plana e espacial. A cidade em 3D, os modelos das missões, a água por shader e os efeitos são renderizados no navegador. As bibliotecas e as fontes já estão no projeto: não há dependência de CDN.
 
@@ -29,7 +29,7 @@ Use vírgula decimal, como `7,5`. O ponto é separador de milhar, como `502.400`
 
 ## Progresso e relatório
 
-Os perfis são locais. Não há login por e-mail, autenticação remota ou banco de dados. Nome, projetos, tentativas, pistas, estrelas e tempo de exploração são salvos no `localStorage` deste navegador e desta origem. Se você usar outro navegador, mudar o endereço do site ou limpar os dados do navegador, o progresso não acompanha automaticamente.
+Ao abrir o app, aparece a tela de acesso. O aluno informa nome, ano (1º, 2º ou 3º do Ensino Médio) e turma (A ou B). Antes do primeiro login, o professor cria uma conta com nome, e-mail e senha; depois pode entrar no painel, filtrar por série e turma e consultar progresso, estrelas, tentativas e atividade por aluno. O protótipo salva perfis e resultados no `localStorage` deste navegador: não há autenticação remota nem sincronização entre dispositivos. Para uso real por uma escola, conecte um serviço de autenticação e banco de dados. O Caderno exporta CSV e JSON com o histórico de tentativas.
 
 O **Caderno** exporta um relatório CSV com as tentativas e um JSON com o histórico completo. Ao terminar, é possível imprimir a conquista ou salvar em PDF pelo diálogo de impressão. O JSON é um registro exportado; esta versão não oferece importação de backup.
 
@@ -70,4 +70,4 @@ Veja `docs/ALTERACOES.md` para as mudanças desta versão e `docs/VALIDACAO.md` 
 
 As soluções e restrições são modelos matemáticos educacionais. Não constituem dimensionamento executivo de infraestrutura, estrutura, instalação elétrica ou abastecimento de água.
 
-Three.js é distribuído sob licença MIT, incluída em `dist/vendor/THREE-LICENSE.txt`. As fontes Roboto acompanham o projeto para uso local. Brasão, cidade, modelos e interface foram criados para Nova Aurora.
+Three.js é distribuído sob licença MIT, incluída em `dist/vendor/THREE-LICENSE.txt`. As fontes Roboto acompanham o projeto para uso local. Brasão, cidade, modelos e interface foram criados para Math City.

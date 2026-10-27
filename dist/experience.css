@@ -155,3 +155,41 @@ dialog>p{font-size:16px}
 @media(max-width:980px){.district-list{overflow:visible}.map-panel{overflow:visible}}
 @media(prefers-reduced-motion:reduce){.button,.map-marker{transition:none}.hero-copy,.story-copy{animation:none}}
 @media print{#header,#world,#markers,.atmosphere,.mission-actions{display:none!important}.final-layout{padding:0}.certificate{box-shadow:none}}
+
+/* Student entry and teacher progress dashboard */
+body[data-screen=teacher]{overflow:auto;background:#102d29}
+body[data-screen=teacher] #world,body[data-screen=teacher] #markers,body[data-screen=teacher] .atmosphere{display:none}
+.login-section-title{font:600 15px Arial,sans-serif;color:#e8cca0;margin:22px 0 10px}
+.profile-modal form>label,.login-fields label,.teacher-entry p{font-size:14px;color:#c1cfc4}
+.login-fields{display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:12px;margin-top:14px}
+.login-fields label{display:grid;gap:8px}
+.login-fields select,.teacher-filters select{width:100%;min-height:45px;padding:10px 12px;color:#f2f0e5;background:#102d29;border:1px solid #bdd4bd44;border-radius:9px;font:inherit}
+.teacher-entry{margin-top:18px;padding-top:3px;border-top:1px solid var(--line)}
+.teacher-entry p{margin:0 0 12px;line-height:1.5}
+.profile-choice small{display:block;color:#bdcdbf;font-size:12px;margin-top:3px}
+.teacher-dashboard{width:min(1180px,100%);min-height:calc(100svh - var(--header));margin:0 auto;padding:clamp(28px,5vw,64px) clamp(20px,5vw,64px);color:var(--paper)}
+.teacher-heading h1{margin:10px 0;color:#f0dfbe;font:400 clamp(34px,5vw,54px)/1.08 var(--display);letter-spacing:-1px}
+.teacher-heading p{margin:0;color:#c1cfc4;font-size:16px;line-height:1.6}
+.teacher-filters{display:flex;gap:14px;margin:30px 0 18px}
+.teacher-filters label{display:grid;gap:8px;min-width:180px;color:#dce5d9;font-size:14px}
+.teacher-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 24px}
+.teacher-summary article{display:grid;gap:5px;padding:20px;background:#183b31;border:1px solid var(--line);border-radius:13px}
+.teacher-summary strong{font:400 30px var(--display);color:#e8cca0}
+.teacher-summary span{color:#c1cfc4;font-size:14px}
+.teacher-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:13px;background:#17382f}
+.teacher-table{width:100%;border-collapse:collapse;min-width:760px;text-align:left}
+.teacher-table th,.teacher-table td{padding:13px 15px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:middle}
+.teacher-table th{color:#e8cca0;font-weight:600;background:#1b4036}
+.teacher-table td{color:#e5e9dd}
+.teacher-table tbody tr:last-child td{border-bottom:0}
+.teacher-progress{display:inline-block;vertical-align:middle;width:66px;height:7px;margin-right:8px;background:#a5c6b81c;border-radius:10px;overflow:hidden}
+.teacher-progress i{display:block;height:100%;background:#b9d1a0;border-radius:inherit}
+.student-detail-row td{padding-top:0!important}
+.student-mission-grid{display:grid;grid-template-columns:repeat(5,minmax(110px,1fr));gap:8px;padding:5px 0 14px}
+.student-mission-grid span{display:grid;gap:5px;padding:10px;background:#102d2966;border-radius:8px}
+.student-mission-grid strong{font-size:12px;color:#e8cca0}
+.student-mission-grid small{font-size:11px;line-height:1.4;color:#c1cfc4}
+.teacher-empty{text-align:center!important;padding:32px!important;line-height:1.6}
+.teacher-dashboard>.privacy-note{margin:18px 0;color:#bdcdbf}
+@media(max-width:700px){.teacher-dashboard{padding-top:30px}.teacher-filters{display:grid;grid-template-columns:1fr 1fr}.teacher-filters label{min-width:0}.teacher-summary{gap:8px}.teacher-summary article{padding:14px 10px}.teacher-summary strong{font-size:25px}.teacher-summary span{font-size:12px}.student-mission-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.teacher-dashboard .teacher-heading p{font-size:14px}}
+@media(max-width:420px){.login-fields{grid-template-columns:1fr 95px}.teacher-summary{grid-template-columns:1fr}.teacher-summary article{grid-template-columns:auto 1fr;align-items:center}.teacher-summary strong{font-size:24px}}
